@@ -1,0 +1,28 @@
+{
+	"extends": [
+		"stylelint-config-recommended",
+		"stylelint-prettier/recommended"
+	],
+	"rules": {
+		"prettier/prettier": [
+			true,
+			{},
+			{
+				"usePrettierrc": true
+			}
+		],
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": [
+					"tailwind",
+					"apply",
+					"variants",
+					"responsive",
+					"screen",
+					"layer"
+				]
+			}
+		]
+	}
+}
